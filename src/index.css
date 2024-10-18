@@ -1,0 +1,182 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font size */
+  /*========== small font =======================*/
+  --clr-font-5: 1rem;
+  --clr-font-6: 2rem;
+  --clr-font-1: 0.8rem;
+  --clr-font-2: 0.9rem;
+  --clr-font-3: 1.1rem;
+  --clr-font-4: 1.5rem;
+  --clr-font-7: 2.5rem;
+
+  /* ========= meduim fonts =================*/
+  --clr-font-10: 3rem;
+  --clr-font-13: 4rem;
+  --clr-font-8: 2.8rem;
+  --clr-font-9: 2.9rem;
+  --clr-font-11: 3.1rem;
+  --clr-font-12: 3.5rem;
+  --clr-font-14: 4.5rem;
+
+  /* ============ big fonts ============== */
+  --clr-font-17: 5rem;
+  --clr-font-20: 6rem;
+  --clr-font-15: 4.8rem;
+  --clr-font-16: 4.9rem;
+  --clr-font-18: 5.1rem;
+  --clr-font-19: 5.5rem;
+  --clr-font-21: 6.5rem;
+
+  /* rem or px size*/
+  /* ==============small  rem / px =============*/
+
+  --clr-rem-0: 0.2rem;
+  --clr-rem-1: 0.3rem;
+  --clr-rem-2: 0.4rem;
+  --clr-rem-3: 0.5rem;
+  --clr-rem-4: 0.6rem;
+  --clr-rem-5: 0.7rem;
+  --clr-rem-6: 0.8rem;
+  --clr-rem-7: 0.9rem;
+  --clr-rem-8: 1rem;
+  --clr-rem-9: 1.2rem;
+  --clr-rem-10: 1.5rem;
+  --clr-rem-11: 2rem;
+  --clr-rem-12: 2.2rem;
+  --clr-rem-13: 2.5rem;
+  --clr-rem-14: 3rem;
+  --clr-rem-15: 3.2rem;
+  --clr-rem-16: 3.5rem;
+  --clr-rem-17: 4rem;
+  --clr-rem-18: 4.2rem;
+
+  /*=============== meduim rem/ px =============== */
+
+  --clr-rem-19: 4.5rem;
+  --clr-rem-20: 5rem;
+  --clr-rem-21: 5.2rem;
+  --clr-rem-22: 5.5rem;
+  --clr-rem-23: 6rem;
+  --clr-rem-24: 6.2rem;
+  --clr-rem-25: 6.5rem;
+  --clr-rem-26: 7rem;
+  --clr-rem-27: 7.2rem;
+  --clr-rem-28: 7.5rem;
+  --clr-rem-29: 8rem;
+  --clr-rem-30: 8.2rem;
+  --clr-rem-31: 8.5rem;
+  --clr-rem-32: 9rem;
+  --clr-rem-33: 9.2rem;
+  --clr-rem-34: 9.5rem;
+  --clr-rem-35: 10rem;
+  --clr-rem-36: 10.2rem;
+  --clr-rem-37: 10.5rem;
+
+  /* ============ big rem / px ================= */
+
+  --clr-rem-38: 11rem;
+  --clr-rem-39: 11.2rem;
+  --clr-rem-40: 11.5rem;
+  --clr-rem-41: 12rem;
+  --clr-rem-42: 12.2rem;
+  --clr-rem-43: 12.5rem;
+  --clr-rem-44: 13rem;
+  --clr-rem-45: 13.2rem;
+  --clr-rem-46: 13.5rem;
+  --clr-rem-47: 14rem;
+  --clr-rem-48: 14.2rem;
+  --clr-rem-49: 14.5rem;
+  --clr-rem-50: 15rem;
+  --clr-rem-51: 15.2rem;
+  --clr-rem-52: 15.5rem;
+  --clr-rem-53: 16rem;
+  --clr-rem-54: 16.2rem;
+  --clr-rem-55: 16.5rem;
+  --clr-rem-56: 17rem;
+
+  /*======== color =========== */
+  /* orange */
+  --clr-orange: orange;
+  --clr-orange-400: rgb(255, 198, 92);
+}
+
+.night {
+  /* ==================================== */
+  /* NavBar */
+  --clr-theme: white;
+  --clr-bgColor: #000;
+  --clr-link-hover: aqua;
+  --clr-link-color: white;
+  --clr-nav-modal-bg: white;
+  --clr-logo: lightslategrey;
+  --clr-link-icon: lightgray;
+  --clr-mobile-close-btn: black;
+  --clr-mobile-link-color: black;
+  --clr-mobile-link-hover: gray;
+  --clr-close-btn: lightslategrey;
+  --clr-homepage-gradient-img: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.836),
+      rgba(0, 0, 0, 0.137)
+    ),
+    url("./Assets//home.png") no-repeat;
+  /* =================================== */
+
+  /* =================================== */
+  /* General setup */
+  /* ============== color =================== */
+  /* black to white */
+  --clr-text-black-white: white;
+  /* aqua to gold orange*/
+  --clr-text-aqua-gold: rgb(0, 255, 255);
+  /* azure to Apricot */
+  --clr-text-azure-Apricot: #f0ffff;
+}
+.day {
+  /* ==================================== */
+  /* NavBar */
+  --clr-logo: navy;
+  --clr-theme: black;
+  --clr-bgColor: #fff;
+  --clr-link-icon: gray;
+  --clr-link-hover: blue;
+  --clr-nav-modal-bg: black;
+  --clr-mobile-close-btn: white;
+  --clr-mobile-link-color: white;
+  --clr-mobile-link-hover: lightslategrey;
+  --clr-homepage-gradient-img: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.705),
+      rgba(0, 0, 0, 0.151),
+      rgba(0, 0, 0, 0.048)
+    ),
+    url("./Assets//Home2.png") no-repeat;
+  /* =================================== */
+
+  /* =================================== */
+  /* General setup */
+  /* ============== color =================== */
+  /* black to white */
+  --clr-text-black-white: black;
+  /* aqua to Golden Yellow */
+  --clr-text-aqua-gold: #ffc000;
+  /* azure to Apricot*/
+  --clr-text-azure-Apricot: #fbceb1;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+.test {
+  color: gray;
+  color: lightsalmon;
+}
