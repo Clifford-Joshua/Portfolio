@@ -15,11 +15,12 @@ const Opened = () => {
   );
 };
 const Wrapper = styled.div`
+  /* =========================== */
+  /* Mobile View */
   right: 5%;
   bottom: 4%;
   color: white;
   position: absolute;
-  border: 2px solid white;
   font-family: "Roboto", serif;
   .opened {
     display: flex;
@@ -35,6 +36,28 @@ const Wrapper = styled.div`
   .sub_text {
     color: var(--clr-text-aqua-gold);
     font-size: var(--clr-rem-8);
+  }
+
+  /* ============================= */
+  /* Ipad View */
+  @media screen and (width >= 764px) {
+    .opened {
+      font-size: var(--clr-rem-12);
+    }
+    .icon {
+      font-size: var(--clr-rem-11);
+    }
+    .sub_text {
+      font-size: var(--clr-rem-10);
+    }
+  }
+
+  /* ============================ */
+  /* Desktop View */
+  @media screen and (width >= 1023px) {
+    :is(.icon, .sub_text) {
+      text-shadow: 3px 3px black;
+    }
   }
 `;
 export default Opened;

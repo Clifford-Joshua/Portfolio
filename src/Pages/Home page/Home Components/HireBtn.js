@@ -16,7 +16,6 @@ const HireBtn = () => {
 const Wrapper = styled.div`
   /* ====================================== */
   /* Mobile View */
-  border: 2px solid red;
   .hire_btn {
     color: white;
     display: flex;
@@ -32,6 +31,7 @@ const Wrapper = styled.div`
     border: 2px solid var(--clr-orange);
   }
   .hire_btn:hover .hire {
+    color: var(--clr-white);
     background-color: var(--clr-orange);
   }
   .hire_btn:hover .icon {
@@ -54,6 +54,21 @@ const Wrapper = styled.div`
   .icon {
     width: var(--clr-rem-11);
     color: var(--clr-orange-400);
+  }
+
+  /* =============================== */
+  /* Ipad View */
+  @media screen and (width >= 764px) {
+    .hire_btn {
+      height: var(--clr-rem-17);
+      font-size: var(--clr-rem-10);
+    }
+    .hire {
+      width: var(--clr-rem-30);
+    }
+    .icon {
+      width: var(--clr-rem-14);
+    }
   }
 `;
 export default HireBtn;

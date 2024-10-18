@@ -18,8 +18,8 @@ const Wrapper = styled.div`
   /* ================================= */
   /* Mobile View */
   .Open_Nav_Btn {
-    color: lightgray;
     font-size: 1.2rem;
+    color: var(--clr-navtoggle-lightgray-black);
   }
   /* ================================= */
   /* Ipad View */

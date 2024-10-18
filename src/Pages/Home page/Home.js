@@ -19,6 +19,11 @@ const Wrapper = styled.div`
   background: var(--clr-homepage-gradient-img);
   background-size: contain;
   background-position-x: right;
-  border: 2px solid red;
+
+  /* ===================================== */
+  /* Desktop View */
+  @media screen and (width >= 1023px) {
+    padding: 5rem;
+  }
 `;
 export default Home;
