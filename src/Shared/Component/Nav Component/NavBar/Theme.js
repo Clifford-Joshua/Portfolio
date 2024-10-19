@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { LuCloudSun } from "react-icons/lu";
 import { RiMoonClearFill } from "react-icons/ri";
 import styled from "styled-components";
-
+import { useGlobalContent } from "../../../Use Context/useContext";
 // ==========================
 // Stored Theme
 const StorageTheme = () => {
@@ -15,20 +15,34 @@ const StorageTheme = () => {
 
 const Theme = () => {
   const [Theme, setTheme] = useState(StorageTheme());
+  const { setDayProfile } = useGlobalContent();
 
   useEffect(() => {
     document.documentElement.className = Theme;
     localStorage.setItem("theme", Theme);
   }, [Theme]);
 
+  // Profile Picture useEffect
+  useEffect(() => {
+    if (Theme === "night") {
+      setDayProfile(false);
+    } else {
+      setDayProfile(true);
+    }
+    // eslint-disable-next-line
+  }, [Theme]);
+
+  // Nav toggle
   const toggleTheme = () => {
     const ThemeBtn = document.querySelector(".Theme");
 
     if (Theme === "night") {
       setTheme("day");
+      setDayProfile(false);
       ThemeBtn.classList.add("Theme_animation");
     } else {
       setTheme("night");
+      setDayProfile(true);
       ThemeBtn.classList.remove("Theme_animation");
     }
   };

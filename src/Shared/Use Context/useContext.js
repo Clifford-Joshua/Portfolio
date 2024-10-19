@@ -6,8 +6,14 @@ const AppProvider = ({ children }) => {
   // Nav
   const [openNav, setOpenNav] = useState(false);
   // =====================================
+
+  // About Page
+  const [dayprofile, setDayProfile] = useState("");
+
   return (
-    <AppContext.Provider value={{ openNav, setOpenNav }}>
+    <AppContext.Provider
+      value={{ openNav, setOpenNav, setDayProfile, dayprofile }}
+    >
       {children}
     </AppContext.Provider>
   );

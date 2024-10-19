@@ -3,8 +3,7 @@ import { FaBars } from "react-icons/fa6";
 import styled from "styled-components";
 import { useGlobalContent } from "../../../Use Context/useContext";
 const ToggleBtn = () => {
-  const { setOpenNav, openNav } = useGlobalContent();
-  console.log(openNav);
+  const { setOpenNav } = useGlobalContent();
 
   return (
     <Wrapper>
@@ -19,7 +18,7 @@ const Wrapper = styled.div`
   /* Mobile View */
   .Open_Nav_Btn {
     font-size: 1.2rem;
-    color: var(--clr-navtoggle-lightgray-black);
+    color: var(--clr-navtoggle-navy-black);
   }
   /* ================================= */
   /* Ipad View */

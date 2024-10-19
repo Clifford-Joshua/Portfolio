@@ -131,7 +131,7 @@
       rgba(0, 0, 0, 0.178),
       rgba(0, 0, 0, 0.137)
     ),
-    url("./Assets//home.png") no-repeat;
+    url("./Assets/Home_Img/Night_Home.png") no-repeat;
   /* =================================== */
 
   /* =================================== */
@@ -144,7 +144,9 @@
   /* azure to Apricot */
   --clr-text-azure-Apricot: #f0ffff;
   /* lightgray to black */
-  --clr-navtoggle-lightgray-black: black;
+  --clr-navtoggle-navy-black: navy;
+  /* ash gray to steel gray */
+  --clr-text-ash-steel: #b2beb5;
 }
 .day {
   /* ==================================== */
@@ -164,7 +166,7 @@
       rgba(0, 0, 0, 0.151),
       rgba(0, 0, 0, 0.048)
     ),
-    url("./Assets//Home2.png") no-repeat;
+    url("./Assets/Home_Img/Day_Home.png") no-repeat;
   /* =================================== */
 
   /* =================================== */
@@ -177,11 +179,16 @@
   /* azure to Apricot*/
   --clr-text-azure-Apricot: #fbceb1;
   /* lightgray to black */
-  --clr-navtoggle-lightgray-black: lightgray;
+  --clr-navtoggle-navy-black: black;
+  /* ash gray to steel gray */
+  --clr-text-ash-steel: #71797e;
 }
 body {
   width: 100%;
   overflow: hidden;
+}
+img {
+  display: block;
 }
 .test {
   color: gray;
