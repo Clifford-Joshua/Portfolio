@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Wrapper>
       <Qoute />
-      <div>
+      <div className="about_container">
         <Profile />
         <Bio />
       </div>
@@ -19,16 +19,28 @@ const Wrapper = styled.div`
   min-height: 100vh;
   background-color: var(--clr-bgColor);
 
+  .about_container {
+    display: flex;
+    gap: var(--clr-rem-8);
+    flex-direction: column;
+  }
   /* ============================ */
   /* Ipad View */
   @media screen and (width >= 764px) {
     padding: 5rem 2.5rem;
+
+    .about_container {
+      flex-direction: row;
+    }
   }
 
   /* ============================== */
   /* Desktop View */
   @media screen and (width>=1023px) {
     padding: 5rem;
+    .about_container {
+      gap: var(--clr-rem-14);
+    }
   }
 `;
 export default About;

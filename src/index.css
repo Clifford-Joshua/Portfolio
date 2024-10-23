@@ -108,6 +108,8 @@
   --clr-orange-400: rgb(255, 198, 92);
   /* white */
   --clr-white: white;
+  /* gray */
+  --clr-gray: gray;
 }
 
 .night {
@@ -185,7 +187,7 @@
 }
 body {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 img {
   display: block;
