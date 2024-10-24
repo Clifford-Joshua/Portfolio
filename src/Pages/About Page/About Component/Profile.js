@@ -6,7 +6,6 @@ import { useGlobalContent } from "../../../Shared/Use Context/useContext";
 import { GiPolarStar } from "react-icons/gi";
 const Profile = () => {
   const { dayprofile } = useGlobalContent();
-  console.log(dayprofile);
 
   return (
     <Wrapper>

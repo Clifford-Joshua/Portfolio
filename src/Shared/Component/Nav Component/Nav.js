@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import NavbgChanger from "../../Utilities/Functionality/NavbgChanger";
 import { NavLogo, NavLinks, Theme, ToggleBtn } from "./NavBar";
 const Nav = () => {
+  NavbgChanger();
   return (
     <Wrapper>
       <nav>
@@ -25,7 +27,6 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     font-family: "Roboto", sans-serif;
-    background-color: var(--clr-bgColor);
   }
 `;
 export default Nav;
