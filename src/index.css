@@ -149,6 +149,12 @@
   --clr-navtoggle-navy-black: navy;
   /* ash gray to steel gray */
   --clr-text-ash-steel: #b2beb5;
+  /* teal to gold*/
+  --clr-year-teal-gold: #008080;
+  /* Neon Green to Light Orange */
+  --clr-seconds-neon-reen-light-orange: #39ff14;
+  /* Sky Blue to Soft Yellow */
+  --clr-days-sky-blue-soft-yellow: #76d7ea;
 }
 .day {
   /* ==================================== */
@@ -184,6 +190,12 @@
   --clr-navtoggle-navy-black: black;
   /* ash gray to steel gray */
   --clr-text-ash-steel: #71797e;
+  /*  Neon Green to Light Orange  */
+  --clr-seconds-neon-green-light-orange: #ffa500;
+  /* Sky Blue to Soft Yellow */
+  --clr-days-sky-blue-soft-yellow: #ffd700;
+  /* teal to gold*/
+  --clr-year-teal-gold: #ffd700;
 }
 body {
   width: 100%;

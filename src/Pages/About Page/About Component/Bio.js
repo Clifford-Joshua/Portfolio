@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import DataCalculation from "../../../Shared/Utilities/Functionality/DataCalculation";
 const Bio = () => {
+  const { days, years, seconds } = DataCalculation();
   return (
     <Wrapper>
       <article className="my_bio">
@@ -22,7 +24,9 @@ const Bio = () => {
           <li>{""}</li>
           <p>
             i've been working with web technologies and studying for
-            years,days,second
+            <span className="year"> {`${years} `} </span>,
+            <span className="days"> {` ${days}`} </span>,
+            <span className="sec"> {`${seconds}`} </span>
           </p>
           <li>{""}</li>
           <p>
@@ -38,6 +42,18 @@ const Wrapper = styled.div`
   /* ================================ */
   /* Mobile View */
   color: var(--clr-gray);
+  .year {
+    color: var(--clr-year-teal-gold);
+  }
+  .days {
+    color: var(--clr-days-sky-blue-soft-yellow);
+  }
+  .sec {
+    color: var(--clr-seconds-neon-reen-light-orange);
+  }
+  :is(.days, .year, .sec) {
+    text-shadow: 2px 1px black;
+  }
   font-family: "Roboto", serif;
   .my_bio {
     padding-block: 2rem;
