@@ -24,9 +24,9 @@ const Bio = () => {
           <li>{""}</li>
           <p>
             i've been working with web technologies and studying for
-            <span className="year"> {`${years} `} </span>,
-            <span className="days"> {` ${days}`} </span>,
-            <span className="sec"> {`${seconds}`} </span>
+            <span className="year"> {`${years} years `} </span>,
+            <span className="days"> {` ${days} days`} </span>,
+            <span className="sec"> {`${seconds} seconds`} </span>
           </p>
           <li>{""}</li>
           <p>
