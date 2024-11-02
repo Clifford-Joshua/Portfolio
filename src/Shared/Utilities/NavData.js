@@ -8,7 +8,7 @@ const links = [
   { name: "Home", link: "/", icon: <FaHome /> },
   { name: "About", link: "/about", icon: <FaAddressBook /> },
   { name: "Service", link: "/service", icon: <SiLinuxserver /> },
-  { name: "Work", link: "/work", icon: <DiHtml5 /> },
-  { name: "contact", link: "/contact", icon: <FaHeadphonesAlt/> },
+  { name: "My Works", link: "/my_works", icon: <DiHtml5 /> },
+  { name: "contact", link: "/contact", icon: <FaHeadphonesAlt /> },
 ];
 export { links };

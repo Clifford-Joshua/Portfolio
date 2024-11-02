@@ -26,7 +26,7 @@ const Bio = () => {
             i've been working with web technologies and studying for
             <span className="year"> {`${years} years `} </span>,
             <span className="days"> {` ${days} days`} </span>,
-            <span className="sec"> {`${seconds} seconds`} </span>
+            <span className="sec"> {`${seconds} `} </span>
           </p>
           <li>{""}</li>
           <p>

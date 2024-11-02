@@ -1,15 +1,16 @@
 import React from "react";
+import { ContactForm } from "./Contact Components";
+import Faq from "./Contact Components/Faq";
 import styled from "styled-components";
 const Contact = () => {
   return (
     <Wrapper>
-      <div>
-        <h2 className="text-light">Contact Us</h2>
-      </div>
+      <ContactForm />
+      <Faq />
     </Wrapper>
   );
 };
 const Wrapper = styled.div`
-  padding-top: 5rem;
+  background-color: var(--clr-bgColor);
 `;
 export default Contact;

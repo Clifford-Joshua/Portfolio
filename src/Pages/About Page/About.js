@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Bio, Qoute, Profile } from "./About Component";
+import { Bio, Qoute, Profile, Exprience } from "./About Component";
 const About = () => {
   return (
     <Wrapper>
@@ -9,6 +9,7 @@ const About = () => {
         <Profile />
         <Bio />
       </div>
+      <Exprience />
     </Wrapper>
   );
 };

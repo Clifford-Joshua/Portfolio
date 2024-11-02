@@ -21,6 +21,22 @@ const DataCalculation = () => {
     return `${value} `;
   };
 
+  // formate date so thar day isn't greater than 365
+  const formatDate = (value) => {
+    return value % 365;
+  };
+
+  // Convert total seconds within a day to HH:MM:SS format
+  const formatTime = (totalSeconds) => {
+    const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(
+      2,
+      "0"
+    );
+    const seconds = String(totalSeconds % 60).padStart(2, "0");
+    return `${hours} hours  ${minutes} mins  ${seconds} sec`;
+  };
+
   useEffect(() => {
     const Interval = setInterval(() => {
       const CurrentYear = new Date();
@@ -30,11 +46,14 @@ const DataCalculation = () => {
 
       // Getting total Seconds
       const Total_Seconds = Math.floor(Diff_Mili_Sec / 1000);
-      setSeconds(formatLength(Total_Seconds));
+
+      // seconds in every 24 hr
+      const secondWithinDay = Total_Seconds % 86400;
+      setSeconds(formatTime(secondWithinDay));
 
       // Getting total Days
       const Total_Days = Math.floor(Total_Seconds / (60 * 60 * 24));
-      setDays(formatLength(Total_Days));
+      setDays(formatDate(Total_Days));
 
       // Getting total Years
       const Total_Years = Math.floor(Total_Days / 365.25); // Approximate for leap years

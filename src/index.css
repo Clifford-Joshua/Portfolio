@@ -137,6 +137,12 @@
   /* =================================== */
 
   /* =================================== */
+  /* Contact background image */
+  --clr-contact-bgimge: url("./Assets/Contact_img/Day-Img.jpg") no-repeat
+    center/cover;
+  /* =================================== */
+
+  /* =================================== */
   /* General setup */
   /* ============== color =================== */
   /* black to white */
@@ -145,7 +151,7 @@
   --clr-text-aqua-gold: rgb(0, 255, 255);
   /* azure to Apricot */
   --clr-text-azure-Apricot: #f0ffff;
-  /* lightgray to black */
+  /* navy to black */
   --clr-navtoggle-navy-black: navy;
   /* ash gray to steel gray */
   --clr-text-ash-steel: #b2beb5;
@@ -155,6 +161,14 @@
   --clr-seconds-neon-reen-light-orange: #39ff14;
   /* Sky Blue to Soft Yellow */
   --clr-days-sky-blue-soft-yellow: #76d7ea;
+  /* blue to gold */
+  --clr-blue-gold: gold;
+  /* lightgray to black */
+  --clr-black-lightgray: lightgray;
+  /* light black to lightgray */
+  --clr-light-black-light-gray: #1a1818;
+  /* Mahogany to Golden Yellow */
+  --clr-mahogany-golden-yellow: #ffc000;
 }
 .day {
   /* ==================================== */
@@ -178,6 +192,12 @@
   /* =================================== */
 
   /* =================================== */
+  /* Contact background image */
+  --clr-contact-bgimge: url("./Assets/Contact_img/Night-Img.jpg") no-repeat
+    center/cover;
+  /* =================================== */
+
+  /* =================================== */
   /* General setup */
   /* ============== color =================== */
   /* black to white */
@@ -186,7 +206,7 @@
   --clr-text-aqua-gold: #ffc000;
   /* azure to Apricot*/
   --clr-text-azure-Apricot: #fbceb1;
-  /* lightgray to black */
+  /* navy to black */
   --clr-navtoggle-navy-black: black;
   /* ash gray to steel gray */
   --clr-text-ash-steel: #71797e;
@@ -196,6 +216,14 @@
   --clr-days-sky-blue-soft-yellow: #ffd700;
   /* teal to gold*/
   --clr-year-teal-gold: #ffd700;
+  /* blut to gold */
+  --clr-blue-gold: blue;
+  /* lightgray to black */
+  --clr-black-lightgray: black;
+  /* light black to lightgray */
+  --clr-light-black-light-gray: lightgray;
+  /* Mahogany to Golden Yellow */
+  --clr-mahogany-golden-yellow: #c04000;
 }
 body {
   width: 100%;
@@ -204,7 +232,13 @@ body {
 img {
   display: block;
 }
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 .test {
-  color: gray;
+  color: #1a1818;
   color: lightsalmon;
 }

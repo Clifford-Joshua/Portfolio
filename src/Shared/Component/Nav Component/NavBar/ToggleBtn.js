@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   /* Mobile View */
   .Open_Nav_Btn {
     font-size: 1.2rem;
-    color: var(--clr-navtoggle-navy-black);
+    color: var(--clr-text-black-white);
   }
   /* ================================= */
   /* Ipad View */
