@@ -5,7 +5,7 @@ const DataCalculation = () => {
   const [seconds, setSeconds] = useState("");
   const [years, setYears] = useState("");
 
-  const StartingYear = new Date(2021, 9, 1); // October 1, 2023
+  const StartingYear = new Date(2022, 9, 1); // October 1, 2023
 
   // Format large numbers
   const formatLength = (value) => {
